@@ -1,0 +1,16 @@
+[package]
+name = "rust-titanic"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+polars = "0.20.0"
+polars-core = {version = "0.20.0", features=["ndarray"]}
+linfa = { version = "0.5.0", features=["openblas-system"] }
+linfa-datasets = { version = "0.5.0", features = ["winequality"] }
+linfa-bayes = { version = "0.5.0" }
+ndarray = { version = "0.12.1"}
+ndarray-csv = { version = "0.5.1"}
+csv = { version = "1.1"}
